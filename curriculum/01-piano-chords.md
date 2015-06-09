@@ -155,8 +155,8 @@ that it takes two parameters:
  * A function repeatedly called with each element:
 
 ```clojure
-    (doseq [note (chord :c3 :major)]  ;; Sequence
-           (piano note))              ;; Behavior
+(doseq [note (chord :c3 :major)]  ;; Sequence
+  (piano note))                   ;; Behavior
 ```
 
 Notice that the first argument to `doseq` specifies the sequence as
