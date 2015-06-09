@@ -154,8 +154,10 @@ that it takes two parameters:
  * The sequence of things, for instance, a list of note numbers.
  * A function repeatedly called with each element:
 
+```clojure
     (doseq [note (chord :c3 :major)]  ;; Sequence
            (piano note))              ;; Behavior
+```
 
 Notice that the first argument to `doseq` specifies the sequence as
 an odd-looking vector: `[variable value ...]`
